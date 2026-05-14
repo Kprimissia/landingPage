@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Digital Atelier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Logo: imagem png.png -->
+      <a href="#" class="nav-logo">
+        <img src="Assets/png.png" alt="The Digital Atelier" class="logo-img" />
+      </a>
+
+      <nav class="nav-center">
+        <a href="#collections">Collections</a>
+        <a href="#arrivals">New Arrivals</a>
+        <a href="#journal">Journal</a>
+        <a href="#story">Our Story</a>
+      </nav>
+
+      <div class="nav-right">
+        <!-- Ícone carrinho: shopping-bag.png -->
+        <button class="icon-btn" aria-label="Cart">
+          <img src="Assets/shopping-bag.png" alt="Cart" class="nav-icon" />
+        </button>
+        <!-- Ícone conta: person.png -->
+        <button class="icon-btn" aria-label="Account">
+          <img src="Assets/person.png" alt="Account" class="nav-icon" />
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-nav">
+        <a href="#collections">Collections</a>
+        <a href="#arrivals">New Arrivals</a>
+        <a href="#journal">Journal</a>
+        <a href="#story">Our Story</a>
+      </nav>
+    </div>
+  </header>
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="collections">
+    <div class="hero-text">
+      <h1 class="hero-title">
+        Curated<br/>
+        Artistry for<br/>
+        the <em class="accent-em">Modern<br/>Life</em>
+      </h1>
+      <p class="hero-body">Discover a symphony of design and utility. Every piece in our collection is an intentional statement for the discerning aesthetic.</p>
+      <div class="hero-ctas">
+        <button class="btn-primary">Explore Collection</button>
+        <button class="btn-text-link">Watch Film</button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <!-- Imagem principal: living-space.png -->
+      <div class="hero-img-main">
+        <img src="Assets/interior-luxo.png" alt="Living Space" />
+      </div>
+      <!-- Imagem flutuante: oyovaso.jpeg (cerâmica) -->
+      <div class="hero-img-float">
+        <img src="Assets/ceramic.png" alt="Ceramic Piece" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── THE ATELIER STANDARD ── -->
+  <section class="standard-section" id="story">
+    <div class="container">
+      <div class="standard-header">
+        <div class="standard-header-left">
+          <p class="eyebrow">The Philosophy</p>
+          <h2 class="section-title">The Atelier Standard</h2>
+        </div>
+        <p class="standard-header-right">Defined by three pillars of uncompromising excellence in digital and physical craft.</p>
+      </div>
+      <div class="standard-grid">
+
+        <div class="std-card">
+          <!-- ícone verificado: verified.png -->
+          <div class="std-icon icon-gold">
+            <img class="feature-icon" src="Assets/verified.png" alt="Verified">
+          </div>
+          <h3>Artisan Verified</h3>
+          <p>Each piece is individually inspected and certified by master artisans to ensure heirloom quality.</p>
+        </div>
+
+        <div class="std-card">
+          <!-- ícone eco/sustentável: safework.png -->
+          <div class="std-icon icon-sage">
+            <img class="feature-icon" src="Assets/safework.png" alt="Sustainable">
+          </div>
+          <h3>Sustainable Flow</h3>
+          <p>Conscious sourcing and ethical production cycles that prioritize our planet's ecological longevity.</p>
+        </div>
+
+        <div class="std-card">
+          <!-- ícone global: public-roxo.png -->
+          <div class="std-icon icon-terra">
+            <img class="feature-icon" src="Assets/public-roxo.png" alt="Global">
+          </div>
+          <h3>Global Priority</h3>
+          <p>White-glove delivery to any corner of the globe, handled with the utmost care and precision.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURED DROPS ── -->
+  <section class="drops-section" id="arrivals">
+    <div class="container">
+      <div class="drops-header">
+        <h2 class="section-title-lg">Featured Drops</h2>
+        <a href="#" class="view-all">View All Collections →</a>
+      </div>
+      <div class="drops-grid">
+
+        <article class="drop-card">
+          <div class="drop-img">
+            <!-- Produto 1: terno.jpeg -->
+            <img src="Assets/indigo-series-01.png" alt="The Indigo Series 01" />
+            <span class="drop-badge">Limited</span>
+          </div>
+          <div class="drop-meta">
+            <div class="drop-info">
+              <h4>The Indigo Series 01</h4>
+              <p>1 Piece</p>
+            </div>
+            <span class="drop-price">$450</span>
+          </div>
+        </article>
+
+        <article class="drop-card">
+          <div class="drop-img">
+            <!-- Produto 2: tidal-ceramic-vessel.png -->
+            <img src="Assets/coisa.jpeg" alt="Tidal Ceramic Vessel" />
+          </div>
+          <div class="drop-meta">
+            <div class="drop-info">
+              <h4>Tidal Ceramic Vessel</h4>
+              <p>Home Objects</p>
+            </div>
+            <span class="drop-price">$180</span>
+          </div>
+        </article>
+
+        <article class="drop-card">
+          <div class="drop-img">
+            <!-- Produto 3: relogioc.jpeg (relógio prata) -->
+            <img src="Assets/atelier-chrono-silver.png" alt="Atelier Chrono Silver" />
+          </div>
+          <div class="drop-meta">
+            <div class="drop-info">
+              <h4>Atelier Chrono Silver</h4>
+              <p>Timepiece</p>
+            </div>
+            <span class="drop-price">$620</span>
+          </div>
+        </article>
+
+        <article class="drop-card">
+          <div class="drop-img">
+            <!-- Produto 4: sonic-bloom-headphones.png -->
+            <img src="Assets/fonec.jpeg" alt="Sonic Bloom Headphones" />
+          </div>
+          <div class="drop-meta">
+            <div class="drop-info">
+              <h4>Sonic Bloom Headphones</h4>
+              <p>Audio</p>
+            </div>
+            <span class="drop-price">$340</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section class="test-section">
+    <div class="test-inner">
+      <h2 class="test-title">Words from the Atelier</h2>
+      <div class="test-grid">
+
+        <div class="test-card">
+          <!-- ícone aspas: quote.png -->
+          <img class="test-qq" src="Assets/quote.png" alt="Quote" />
+          <p class="test-body">"The attention to detail is bordering on obsessive. My Indigo Series watch isn't just a tool; it's a piece of kinetic art that I wear every single day."</p>
+          <div class="test-author">
+            <!-- avatar Elena Vance: person.png -->
+            <div class="t-avatar av1">
+              <img src="Assets/elena-vance.png" alt="Elena Vance">
+            </div>
+            <div>
+              <strong>Elena Vance</strong>
+              <span>Creative Director, &amp;IA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-card">
+          <!-- ícone aspas: quote.png -->
+          <img class="test-qq" src="Assets/quote.png" alt="Quote" />
+          <p class="test-body">"Finding products that balance sustainability with high-end design is rare. The Digital Atelier has mastered this intersection perfectly."</p>
+          <div class="test-author">
+            <!-- avatar Julian Thorne: julian-thorne.png -->
+            <div class="t-avatar av2">
+              <img src="Assets/julian_thorne.png" alt="Julian Thorne">
+            </div>
+            <div>
+              <strong>Julian Thorne</strong>
+              <span>Principal Architect</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── JOIN THE INNER CIRCLE ── -->
+  <section class="circle-section" id="journal">
+    <div class="container">
+      <p class="circle-eyebrow">Exclusives</p>
+      <h2 class="circle-title">Join the Inner Circle</h2>
+      <p class="circle-body">Receive early access to limited drops, artist interviews, and invitations to private gallery showings.</p>
+      <div class="circle-form">
+        <input type="email" id="emailInput" placeholder="Enter your email" class="circle-input" />
+        <button class="btn-subscribe" id="subscribeBtn">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <span class="footer-logo">The Digital Atelier</span>
+        <nav class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Shipping &amp; Returns</a>
+          <a href="#">Instagram</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2024 The Digital Atelier. Crafted for the Curated.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
